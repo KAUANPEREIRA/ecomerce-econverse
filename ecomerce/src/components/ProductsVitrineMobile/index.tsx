@@ -57,8 +57,6 @@ export const ProductsVitrineMobile = async ({ vitrine }: Props) => {
     navigation: true,
   };
 
-  console.log({ vitrine });
-
   return (
     <>
       <VitrineProductsContainerMobile>
@@ -81,18 +79,6 @@ export const ProductsVitrineMobile = async ({ vitrine }: Props) => {
               );
             })}
         </CardMobile>{" "}
-        {/* <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={CloseModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
-          <button onClick={CloseModal}>X</button>
-
-          {selectedProduct && (
-            <ModalContainer selectedProduct={selectedProduct} />
-          )}
-        </Modal> */}
       </VitrineProductsContainerMobile>
     </>
   );

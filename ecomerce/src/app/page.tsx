@@ -11,8 +11,6 @@ export default async function Home() {
 
   const products = await getProducts();
 
-  console.log("dados na Home ", products);
-
   return (
     <>
       <HomeComponents vitrine={products} />
